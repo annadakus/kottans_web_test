@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUIZ GAME</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	<!-- navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<h1 class="navbar-brand text-right"><span class="glyphicon glyphicon-record" aria-hidden="true"></span> QUIZ GAME</h1>
+		</div>
+	</nav>
+	<!-- main-->
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-2 col-xs-2 text-right"> <p>Correct answers: <span class="correct-answers">0</span></p></div>
+				<div class="col-md-6 col-sm-8 col-xs-10 text-center">
+					<div>
+						<h2>Question #
+							<span class="question-id"></span>
+						</h2>
+					</div>
+					<div>
+						<h4>Category: 
+							<span class="category-name"></span> 
+						</h4>
+					</div>
+					<div>
+						<h5>
+							<span class = "correct glyphicon glyphicon-ok hidden"> Correct</span>
+						</h5>
+					</div>
+					<div class="text-left parag">
+						<p><span class="real-question"></span></p>
+					</div>
+					<div>
+						<h5>
+							<span class ="incorrect glyphicon glyphicon-remove hidden"> Incorrect</span> 
+						</h5>
+					</div>
+					<div>
+						<span class="skip-quiz">
+							<button type="button" class="btn btn-info btn-block">SKIP</button>
+						</span>
+					</div>
+					<div class ="well well-lg answer"></div>
+					<div class ="well well-lg question"></div>
+					<div>
+						<button type="button" class="btn btn-success btn-block next-quiz hidden">Next question</button>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-2 col-xs-2 text-left"><p>Total questions: <span class="total-amount">0</span></p></div>
+			</div>	
+		</div>
+	</div>
+	<script type="text/javascript" src = "js.js"></script>
+</body>
+</html>
